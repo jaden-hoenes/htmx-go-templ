@@ -1,0 +1,18 @@
+package shared
+
+import (
+	"github.com/jaden-hoenes/htmx-go-templ/constants/url"
+	"github.com/jaden-hoenes/htmx-go-templ/constants/file"
+)
+
+templ Base() {
+	<html>
+		<head>
+			<link rel="icon" type="image/png" href={ url.Favicon }/>
+			<script src={ file.Htmx }></script>
+		</head>
+		<body>
+			{ children... }
+		</body>
+	</html>
+}
